@@ -24,8 +24,8 @@ public class TrelloMapperTest {
         List<TrelloBoard> trelloBoards = trelloMapper.mapToBoards(trelloBoardsDto);
 
         //When
-        assertEquals(trelloBoards.size(), 3);
-        assertEquals(trelloBoards.get(1).getClass(), TrelloBoard.class);
+        assertEquals( 3, trelloBoards.size());
+        assertEquals(TrelloBoard.class, trelloBoards.get(1).getClass());
     }
 
     @Test
@@ -40,8 +40,8 @@ public class TrelloMapperTest {
         List<TrelloBoardDto> trelloBoardsDto = trelloMapper.mapToBoardsDto(trelloBoards);
 
         //When
-        assertEquals(trelloBoardsDto.size(), 3);
-        assertEquals(trelloBoardsDto.get(1).getClass(), TrelloBoardDto.class);
+        assertEquals(3, trelloBoardsDto.size());
+        assertEquals(TrelloBoardDto.class, trelloBoardsDto.get(1).getClass());
     }
 
     @Test
@@ -56,8 +56,8 @@ public class TrelloMapperTest {
         List<TrelloList> trellolists = trelloMapper.mapToList(trelloListsDto);
 
         //When
-        assertEquals(trellolists.size(), 3);
-        assertEquals(trellolists.get(1).getClass(), TrelloList.class);
+        assertEquals(3, trellolists.size());
+        assertEquals(TrelloList.class, trellolists.get(1).getClass());
     }
 
     @Test
@@ -72,8 +72,8 @@ public class TrelloMapperTest {
         List<TrelloListDto> trelloListsDto = trelloMapper.mapToListDto(trelloLists);
 
         //When
-        assertEquals(trelloListsDto.size(), 3);
-        assertEquals(trelloListsDto.get(1).getClass(), TrelloListDto.class);
+        assertEquals(3, trelloListsDto.size());
+        assertEquals(TrelloListDto.class, trelloListsDto.get(1).getClass());
     }
 
     @Test
@@ -85,7 +85,7 @@ public class TrelloMapperTest {
         TrelloCard trelloCard = trelloMapper.mapToCard(trelloCardDto);
 
         //When
-        assertEquals(trelloCard.getClass(), TrelloCard.class);
+        assertEquals(TrelloCard.class, trelloCard.getClass());
     }
 
     @Test
@@ -97,6 +97,6 @@ public class TrelloMapperTest {
         TrelloCardDto trelloCardDto = trelloMapper.mapToCardDto(trelloCard);
 
         //When
-        assertEquals(trelloCardDto.getClass(), TrelloCardDto.class);
+        assertEquals(TrelloCardDto.class, trelloCardDto.getClass());
     }
 }
