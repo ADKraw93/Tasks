@@ -15,5 +15,4 @@ public class StaticWebPageController {
         return "index";
     }
 
-
 }
