@@ -25,6 +25,25 @@ public class EmailScheduler {
         );
     }
 
+    /*private Mail createMail() {
+        long size = taskRepository.count();
+        if (size==1) {
+            return new Mail(
+                    adminConfig.getAdminMail(),
+                    null,
+                    SUBJECT,
+                    "Currently in database you got: " + size + " task"
+            );
+        } else {
+            return new Mail(
+                    adminConfig.getAdminMail(),
+                    null,
+                    SUBJECT,
+                    "Currently in database you got: " + size + " tasks"
+            );
+        }
+    }*/
+
     private Mail createMail() {
         long size = taskRepository.count();
         if (size==1) {
